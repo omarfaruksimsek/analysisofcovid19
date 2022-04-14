@@ -118,6 +118,12 @@ def about(request):
     }
     return render(request, "about.html", context)
 
+def country(request):
+    context = {
+        "title": "Ülke Bazında Veriler",
+        
+    }
+    return render(request, "countries.html", context)
 
 def chart_select_view(request):
     global graph
